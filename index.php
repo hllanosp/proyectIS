@@ -1,46 +1,52 @@
 
-<!-- Representa la estructura de la pagina web -->
-<!DOCTYPE html>
-<html class="no-js">
 
-<?php
-  include('pages/head.php');
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<?php 
+    include('pages/head.php');
  ?>
 
- <div class="container-fluid" id = "">
-     <div class="row-fluid">
-         <?php
-            include('pages/slidebar.php');
-          ?>
+<body>
 
-         <!--/span-->
-         <div class="span9" id="content">
-          <?php
-            include('pages/home.php');
-           ?>
-         </div>
-     </div>
+    <div id="wrapper">
 
+        <!-- Navigation -->
+        <?php 
+            include('pages/nav_principal.php');
+         ?>
 
+        <div id="page-wrapper">
 
-     <hr>
-  
-       <?php
-          include('pages/footer.php');
-        ?>
+            <div class="container-fluid">
+                <?php 
+                    include('pages/home.php');
+                 ?>
 
- </div>
- <!--/.fluid-container-->
- <script src="vendors/jquery-1.9.1.min.js"></script>
- <script src="bootstrap/js/bootstrap.min.js"></script>
- <script src="vendors/easypiechart/jquery.easy-pie-chart.js"></script>
- <script src="assets/scripts.js"></script>
- <script>
- $(function() {
-     // Easy pie charts
-     $('.chart').easyPieChart({animate: 1000});
- });
- </script>
- </body>
+            </div>
+            <!-- /.container-fluid -->
 
- </html>
+        </div>
+        <!-- /#page-wrapper -->
+         <?php 
+            include('pages/footer.php');
+         ?>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>
