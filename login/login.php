@@ -5,7 +5,7 @@
       <a class="btn btn-block btn-social btn-google">
         <i class="fa fa-google"></i> Sign in with google
       </a>
-      <a class="btn btn-block btn-social btn-facebook">
+      <a id = "login" class="btn btn-block btn-social btn-facebook">
         <i class="fa fa-facebook"></i> Sign in with facebook
       </a>
     <!--   <a class="btn btn-block btn-social btn-facebook">
@@ -38,3 +38,17 @@
     New here ? <a href="#"><b>Join Us</b></a>
   </div> -->
 </div>
+
+<script src = "login/login_submit.js"></script>
+
+<script>
+
+  // Load the SDK asynchronously
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+   </script>

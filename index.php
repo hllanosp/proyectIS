@@ -22,7 +22,7 @@
 
             <div class="container-fluid">
                 <?php 
-                    include('mvc/proyectIS/controller.php');
+                    include('pages/home2.php');
                  ?>
 
             </div>

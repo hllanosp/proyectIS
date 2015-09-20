@@ -1,6 +1,5 @@
-  <link rel="stylesheet" href="navbar_efecto.css">
     <style>
-        body {
+    body {
     position: relative;
     overflow-x: hidden;
 }
@@ -297,8 +296,9 @@ html { height: 100%;}
     z-index: 1;
 }
     </style>
-        <div id="wrapper">
-        <div class="overlay" style = "display:none"></div>
+
+    <div id="wrapper">
+        <div class="overlay"></div>
     
         <!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
@@ -348,8 +348,8 @@ html { height: 100%;}
         <div id="page-content-wrapper">
             <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
                 <span class="hamb-top"></span>
-                <span class="hamb-middle"></span>
-                <span class="hamb-bottom"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
             </button>
             <div class="container">
                 <div class="row">
@@ -368,6 +368,7 @@ html { height: 100%;}
 
     </div>
     <!-- /#wrapper -->
+
 
 
     <script>

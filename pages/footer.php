@@ -6,6 +6,8 @@
 		position: relative;
 		overflow: hidden;
 		height: 200px;
+		background-color: #1b2b33;
+		color: #ffffff;
 	}
 	.cuadro_intro_hover:hover .caption{
 		opacity: 1;
@@ -45,8 +47,10 @@
 		width: 100%;
 	}
 </style>
-        <footer style = "background-color: #;" class = "well">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<hr>
 
+        <footer>
             <div class="row">
                 <div class="col-lg-12">
     			<div class="col-lg-3 col-md-6">
@@ -56,7 +60,7 @@
     	<div class="col-lg-3">
     				<div class="cuadro_intro_hover " style="background-color:#cccccc;">
 						<p style="text-align:center; margin-top:20px;">
-							<img src="images/footer1.jpg" class="img-responsive" alt="">
+							<img src="http://placehold.it/500x330" class="img-responsive" alt="">
 						</p>
 						<div class="caption">
 							<div class="blur"></div>
@@ -72,7 +76,7 @@
        <div class="col-lg-3">
     				<div class="cuadro_intro_hover " style="background-color:#cccccc;">
 						<p style="text-align:center; margin-top:20px;">
-							<img src="images/hh.jpg" class="img-responsive" alt="">
+							<img src="http://placehold.it/500x330" class="img-responsive" alt="">
 						</p>
 						<div class="caption">
 							<div class="blur"></div>
@@ -152,7 +156,7 @@ GitHub</a>
 			<br/>
 			
 				<hr>
-                    <p>Copyright © Proyectis | <a href="">Politicas de privacidad</a> | <a href="">Terminos de uso</a></p>
+                    <p>Copyright © Your Website | <a href="">Privacy Policy</a> | <a href="">Terms of Use</a></p>
 					
 					
 					
