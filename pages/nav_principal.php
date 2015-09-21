@@ -26,7 +26,7 @@
   </ul>
   <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
   <?php 
-    include('slidebar.php');
+    // include('slidebar.php');
    ?>
   <!-- /.navbar-collapse -->
 </nav>

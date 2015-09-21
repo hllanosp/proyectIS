@@ -25,7 +25,10 @@
                 /*
                     include('mvc/proyectIS/controller.php');
                 */
-                include ('pages/home2.php');
+
+                include('pages/slidebar.php'); 
+                    
+                    include('pages/home3.php');
                  ?>
 
             </div>
