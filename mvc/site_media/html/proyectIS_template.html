@@ -1,25 +1,43 @@
-<link rel="stylesheet" href="css/stylo.css">
-
 <style>
-    .destacados{
-    padding: 20px 0;
-    text-align: center;
+    
+    @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+.panel-image img.panel-image-preview {
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
 }
-.destacados > div > div{
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 4px;
-    transition: 0.2s;
+
+.panel-heading ~ .panel-image img.panel-image-preview {
+    border-radius: 0px;
 }
-.destacados > div:hover > div{
-    margin-top: -10px;
-    border: 1px solid rgb(200, 200, 200);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
-    background: rgba(200, 200, 200, 0.1);
-    transition: 0.5s;
+
+.panel-image ~ .panel-body, .panel-image.hide-panel-body ~ .panel-body {
+    overflow: hidden;
+}
+.panel-image ~ .panel-footer a {
+    padding: 0px 10px;
+    font-size: 1.3em;
+    color: rgb(100, 100, 100);
+}
+
+.panel-image.hide-panel-body ~ .panel-body {
+    height: 0px;
+    padding: 0px;
 }
 </style>
 
-<div class="row destacados">
+    <div class="row">
+        <div class="jumbotron">
+            <h1 class="page-header">
+                Proyectis <small>comunidad IS</small>
+            </h1>
+            <p>Esta es una Plataforma online. En donde puedes compartir con la comunidad estudiantil todos tus proyectos. Tambien puedes participar en proyectos de vinculacion y en el blog...</p>
+            <p>
+                <a role="button" class="btn btn-primary btn-lg" href="#">Saber mas.. »</a>
+            </p>
+        </div>
+    </div>
+
+<div class="row">
     {project}
 </div>
