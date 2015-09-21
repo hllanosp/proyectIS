@@ -21,7 +21,8 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
     <link rel="stylesheet" href="components/bootstrap-social.css">
-
+     
+     <link rel="stylesheet" href="css/sidebar.css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
