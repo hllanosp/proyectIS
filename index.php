@@ -10,7 +10,9 @@
  ?>
 
 <body>
-
+    <?php 
+       include('pages/slidebar.php');
+   ?>
     <div id="wrapper">
 
         <!-- Navigation -->
@@ -18,27 +20,24 @@
             include('pages/nav_principal.php');
          ?>
 
-        <div id="page-wrapper">
+        <div >
 
             <div class="container-fluid">
                 <?php
                 /*
                     include('mvc/proyectIS/controller.php');
                 */
-
-                include('pages/slidebar.php'); 
-                    
-                    include('pages/home3.php');
+                    include('pages/home2.php');
                  ?>
 
             </div>
             <!-- /.container-fluid -->
-
+            <?php
+                include('pages/footer.php');
+            ?>
         </div>
         <!-- /#page-wrapper -->
-         <?php 
-            include('pages/footer.php');
-         ?>
+   
     </div>
     <!-- /#wrapper -->
 
