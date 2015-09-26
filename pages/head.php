@@ -22,7 +22,7 @@
     
     <link rel="stylesheet" href="components/bootstrap-social.css">
      
-     <link rel="stylesheet" href="css/sidebar.css">
+     <link rel="stylesheet" href="css/sidebar2.css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

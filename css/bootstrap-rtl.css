@@ -1229,10 +1229,10 @@ th {
   margin-right: 0;
   margin-left: 10px;
 }
-.media > .pull-right {
+.media > .pull-left {
   margin-left: 10px;
 }
-.media > .pull-right.flip {
+.media > .pull-left.flip {
   margin-left: 0;
   margin-right: 10px;
 }
@@ -1449,7 +1449,7 @@ th {
     padding-bottom: 30px;
   }
 }
-.pull-right.flip {
+.pull-left.flip {
   float: left !important;
 }
 .pull-left.flip {
