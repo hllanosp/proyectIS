@@ -5,7 +5,9 @@ $( document ).ready(function() {
 	var app_id = '149333848735526';
 	var scopes = 'email, user_friends, public_profile';
 
-	var btn_login = '<a href="#" id="login" class="btn btn-primary">Iniciar sesión</a>';
+	var btn_login = "<a id = 'login' class='btn btn-block btn-social btn-facebook'>"+
+                  "<i class='fa fa-facebook'></i> Sign in with facebook"+
+                  "</a>";
 
 	var div_session = "<div id='facebook-session'>"+
 					  "<strong></strong>"+
