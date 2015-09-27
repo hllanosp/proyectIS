@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <?php 
@@ -9,11 +10,13 @@
    ?>
     <div id="wrapper">
         <!-- Navigation -->
+        <div id="nav_principal" style = "border-button : 0px;">
         <?php 
             include('pages/nav_principal.php');
          ?>
+         </div>
         <div id="page-wrapper">
-               <div class="container" id = "div_contenido">
+               <div class="row-fluid container-fluid" id = "div_contenido">
                     <?php
                     // carrusel (jumbutton) principal de informacion 
                      include('pages/jumbutton.php');
@@ -22,14 +25,9 @@
                          <?php 
                          // include('mvc/proyectIS/controller.php');
                          include('pages/proyectos.php');
+                         include('pages/footer.php');
                           ?>       
        
-
-                    
-                    <?php 
-
-                      // include('pages/footer.php');
-                     ?>
                </div>
         </div>
         <!-- /#page-wrapper -->

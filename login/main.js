@@ -1,7 +1,5 @@
 $( document ).ready(function() {
-    $("#lo").click(function(){
-        alert("bien");
-    });
+    
 	var app_id = '149333848735526';
 	var scopes = 'email, user_friends, public_profile';
 
@@ -51,8 +49,8 @@ $( document ).ready(function() {
   		FB.api('/me', function(response) {
 	  		$('#login').after(div_session);
 	  		$('#login').remove();
-	  		$('#facebook-session strong').text("Bienvenido: "+response.name);
-	  		$('#facebook-session img').attr('src','http://graph.facebook.com/'+response.id+'/picture?type=large');
+	  		// $('#facebook-session strong').text("Bienvenido: "+response.name);
+	  		// $('#facebook-session img').attr('src','http://graph.facebook.com/'+response.id+'/picture?type=small');
 	  	});
   	}
 
@@ -61,6 +59,19 @@ $( document ).ready(function() {
   			if (data.status !== 'connected') {
   				FB.login(function(response) {
   					if (response.status === 'connected')
+                $.ajax({
+                    type: "POST",
+                    url: "login/login_submit.php",
+                    data: { "usuario_ID" :  response.id },
+                    success: function(data){
+                         alert("creando variable de sesion");
+         
+                         $('#nav_principal').load('pages/nav_principal.php');
+
+                      }
+                 });
+               
+
   						getFacebookData();
   				}, {scope: scopes});
   			}
@@ -83,7 +94,6 @@ $( document ).ready(function() {
 
   	$(document).on('click', '#login', function(e) {
   		e.preventDefault();
-
   		facebookLogin();
   	})
 

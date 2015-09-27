@@ -1,4 +1,4 @@
-
+<?php session_start() ?>
  <nav class="navbar navbar-default sidebar navbar-fixed-top shadow" role="navigation">
     <div class="container-fluid">
     <div class="navbar-header">

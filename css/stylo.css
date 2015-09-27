@@ -42,6 +42,25 @@ box-shadow: 9px 7px 58px -8px rgba(0,0,0,0.75);
     padding: 0px;
 }
 
+
+ .navbar-login
+{
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size
+{
+    font-size: 87px;
+}
 /*stilos para los Thumnails*/
 /*    
 body {
@@ -75,3 +94,4 @@ body {
     top:0%;
 }
 */
+

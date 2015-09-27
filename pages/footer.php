@@ -6,7 +6,7 @@
 		position: relative;
 		overflow: hidden;
 		height: 200px;
-		background-color: #1b2b33;
+		background-color: #036;
 		color: #ffffff;
 	}
 	.cuadro_intro_hover:hover .caption{
@@ -51,10 +51,6 @@
 <hr>
 
 <div class = "row">
-<div class="">
-    <div class="col-lg-12">
-	<div class="col-lg-3 col-md-6">
-    <div class="container">
 
 
 <div class="col-lg-3">
