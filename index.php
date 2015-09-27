@@ -12,17 +12,25 @@
         <?php 
             include('pages/nav_principal.php');
          ?>
-        <div id="page-content-wrapper">
-                <?php
-                /*
-                    include('mvc/proyectIS/controller.php');
-                */
-                    include('pages/home3.php');
-                 ?>
-            <!-- /.container-fluid -->
-            <?php
-                include('pages/footer.php');
-            ?>
+        <div id="page-wrapper">
+               <div class="container" id = "div_contenido">
+                    <?php
+                    // carrusel (jumbutton) principal de informacion 
+                     include('pages/jumbutton.php');
+                     ?>
+                     
+                         <?php 
+                         // include('mvc/proyectIS/controller.php');
+                         include('pages/proyectos.php');
+                          ?>       
+       
+
+                    
+                    <?php 
+
+                      // include('pages/footer.php');
+                     ?>
+               </div>
         </div>
         <!-- /#page-wrapper -->
     </div>

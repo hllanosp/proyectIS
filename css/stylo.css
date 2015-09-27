@@ -10,8 +10,40 @@
     font-size:12px    
 }
 
+.shadow{
+    -webkit-box-shadow: 9px 7px 58px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 7px 58px -8px rgba(0,0,0,0.75);
+box-shadow: 9px 7px 58px -8px rgba(0,0,0,0.75);
+}
+
+/*Estilos para paneles de proyectos en dashboard principal*/
+
+
+.panel-image img.panel-image-preview {
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.panel-heading ~ .panel-image img.panel-image-preview {
+    border-radius: 0px;
+}
+
+.panel-image ~ .panel-body, .panel-image.hide-panel-body ~ .panel-body {
+    overflow: hidden;
+}
+.panel-image ~ .panel-footer a {
+    padding: 0px 10px;
+    font-size: 1.3em;
+    color: rgb(100, 100, 100);
+}
+
+.panel-image.hide-panel-body ~ .panel-body {
+    height: 0px;
+    padding: 0px;
+}
+
 /*stilos para los Thumnails*/
-    
+/*    
 body {
   padding-top: 0px;
 }
@@ -42,3 +74,4 @@ body {
 .thumbnail:hover .caption {
     top:0%;
 }
+*/
