@@ -36,7 +36,7 @@
             <a href='#' class='dropdown-toggle' data-toggle='dropdown'><b>Login</b> <span class='caret'></span></a>
             <ul id='login-dp' class='dropdown-menu'>
               <li>";
-                  include('../login/login.php');
+                    include('login/login.php');
          echo"</li>
             </ul>
         </li> ";
@@ -44,7 +44,7 @@
 
     // si se ha iniciado sesion
     else{
-      include('login/cerrar_sesion.php');
+        include('login/cerrar_sesion.php');
     }
     // fin else
 

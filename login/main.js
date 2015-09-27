@@ -65,9 +65,7 @@ $( document ).ready(function() {
                     data: { "usuario_ID" :  response.id },
                     success: function(data){
                          alert("creando variable de sesion");
-         
-                         $('#nav_principal').load('pages/nav_principal.php');
-
+                         window.location.reload(); 
                       }
                  });
                

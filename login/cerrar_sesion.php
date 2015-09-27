@@ -49,9 +49,7 @@
                    
                     success: function(data){
                          alert("cerrando sesion");
-                          
-                          $('#nav_principal').load('pages/nav_principal.php');
-                        
+                          window.location.reload();      
                       }
                  });
         });
