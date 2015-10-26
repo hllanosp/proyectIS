@@ -1,10 +1,3 @@
-<?php 
-    if(!isset($_SESSION)) 
-  { 
-    session_start(); 
-  } 
-
- ?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +16,9 @@
       <a id = "login" class="btn btn-block btn-social btn-facebook">
         <i class="fa fa-facebook"></i> Sign in with facebook
       </a>
+    <!--   <a class="btn btn-block btn-social btn-facebook">
+        <i class="fa fa-facebook"></i> Sign in with Facebook
+      </a> -->
     </div>
            
                     or

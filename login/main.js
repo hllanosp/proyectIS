@@ -1,11 +1,11 @@
 $( document ).ready(function() {
-    
+    $("#lo").click(function(){
+        alert("bien");
+    });
 	var app_id = '149333848735526';
 	var scopes = 'email, user_friends, public_profile';
 
-	var btn_login = "<a id = 'login' class='btn btn-block btn-social btn-facebook'>"+
-                  "<i class='fa fa-facebook'></i> Sign in with facebook"+
-                  "</a>";
+	var btn_login = '<a href="#" id="login" class="btn btn-primary">Iniciar sesión</a>';
 
 	var div_session = "<div id='facebook-session'>"+
 					  "<strong></strong>"+
@@ -49,8 +49,8 @@ $( document ).ready(function() {
   		FB.api('/me', function(response) {
 	  		$('#login').after(div_session);
 	  		$('#login').remove();
-	  		// $('#facebook-session strong').text("Bienvenido: "+response.name);
-	  		// $('#facebook-session img').attr('src','http://graph.facebook.com/'+response.id+'/picture?type=small');
+	  		$('#facebook-session strong').text("Bienvenido: "+response.name);
+	  		$('#facebook-session img').attr('src','http://graph.facebook.com/'+response.id+'/picture?type=large');
 	  	});
   	}
 
@@ -59,17 +59,6 @@ $( document ).ready(function() {
   			if (data.status !== 'connected') {
   				FB.login(function(response) {
   					if (response.status === 'connected')
-                $.ajax({
-                    type: "POST",
-                    url: "login/login_submit.php",
-                    data: { "usuario_ID" :  response.id },
-                    success: function(data){
-                         alert("creando variable de sesion");
-                         window.location.reload(); 
-                      }
-                 });
-               
-
   						getFacebookData();
   				}, {scope: scopes});
   			}
@@ -92,6 +81,7 @@ $( document ).ready(function() {
 
   	$(document).on('click', '#login', function(e) {
   		e.preventDefault();
+
   		facebookLogin();
   	})
 
